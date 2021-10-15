@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bjpowernode.mapper.BidInfoMapper">
+  <resultMap id="BaseResultMap" type="com.bjpowernode.model.BidInfo">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="loan_id" jdbcType="INTEGER" property="loanId" />
+    <result column="uid" jdbcType="INTEGER" property="uid" />
+    <result column="bid_money" jdbcType="DECIMAL" property="bidMoney" />
+    <result column="bid_time" jdbcType="TIMESTAMP" property="bidTime" />
+    <result column="bid_status" jdbcType="INTEGER" property="bidStatus" />
+  </resultMap>
+
+  <resultMap id="BidLoanInfoMap" type="com.bjpowernode.pojo.BidLoanInfo">
+    <result column="bid_money" jdbcType="DECIMAL" property="bidMoney" />
+    <result column="bid_time" jdbcType="TIMESTAMP" property="bidTime" />
+    <result column="phone" jdbcType="VARCHAR" property="phone" />
+    <result column="product_name" jdbcType="VARCHAR" property="productName" />
+    <result column="bid_status" jdbcType="INTEGER" property="bidStatus" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, loan_id, uid, bid_money, bid_time, bid_status
+  </sql>
+
+
+    <!--投资的金额和-->
+  <select id="selectSumBidMoney" resultType="java.math.BigDecimal">
+    SELECT
+        sum(bid_money) AS sumBidMoney
+    FROM
+        b_bid_info
+  </select>
+
+  <!--某个产品的投资记录-->
+  <select id="selectBidList"  resultMap="BidLoanInfoMap">
+    SELECT
+      u.phone,
+      b.bid_money,
+      b.bid_time
+    FROM
+        b_bid_info b
+    INNER JOIN u_user u ON b.uid = u.id
+    WHERE
+        b.loan_id = #{loanId}
+    ORDER BY
+        b.bid_time DESC
+    LIMIT 0, 3
+  </select>
+
+  <!--某个用户投资记录-->
+  <select id="selectBidListByUid" resultMap="BidLoanInfoMap">
+    SELECT
+        loan.product_name,
+        b.bid_money,
+        b.bid_time,
+        b.bid_status
+    FROM
+        b_bid_info b
+    INNER JOIN b_loan_info loan ON b.loan_id = loan.id
+    WHERE
+        b.uid = #{uid}
+    AND b.bid_status = 1
+    ORDER BY
+        b.bid_time DESC
+    LIMIT #{offSet}, #{rows}
+
+  </select>
+
+  <!--某用户投资总记录数量-->
+  <select id="selectCountBidByUid" resultType="int">
+      select count(id) as ct from b_bid_info where uid=1
+  </select>
+  <!--查询产品的所有投资记录，-->
+  <select id="selectListByLoanId" resultMap="BaseResultMap">
+      select <include refid="Base_Column_List"></include>
+      from b_bid_info
+      where loan_id = #{loanId} and bid_status = 1
+      order by id
+  </select>
+
+    <!--创建投资记录-->
+  <insert id="insertBidInfo">
+      insert into b_bid_info(loan_id, uid, bid_money, bid_time, bid_status)
+      values(#{loanId},#{uid},#{bidMoney},#{bidTime},#{bidStatus})
+  </insert>
+</mapper>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bjpowernode.mapper.UserMapper">
+    <resultMap id="BaseResultMap" type="com.bjpowernode.model.User">
+        <id column="id" jdbcType="INTEGER" property="id"/>
+        <result column="phone" jdbcType="VARCHAR" property="phone"/>
+        <result column="login_password" jdbcType="VARCHAR" property="loginPassword"/>
+        <result column="name" jdbcType="VARCHAR" property="name"/>
+        <result column="id_card" jdbcType="VARCHAR" property="idCard"/>
+        <result column="add_time" jdbcType="TIMESTAMP" property="addTime"/>
+        <result column="last_login_time" jdbcType="TIMESTAMP" property="lastLoginTime"/>
+        <result column="header_image" jdbcType="VARCHAR" property="headerImage"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+    id, phone, login_password, name, id_card, add_time, last_login_time, header_image
+  </sql>
+
+
+    <!--注册用户总数-->
+    <select id="selectCountRegisterUsers" resultType="java.lang.Integer">
+    SELECT
+	    count(id) AS regUsers
+    FROM
+	    u_user
+  </select>
+    <select id="selectByPhone" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"></include>
+        from u_user
+        where phone = #{phone}
+    </select>
+
+    <!--登录-->
+    <select id="selectByPhoneAndPassword" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"></include>
+        from u_user
+        where phone=#{phone} and login_password=#{pwd}
+    </select>
+    <select id="getUser" resultMap="BaseResultMap">
+        select <include refid="Base_Column_List"></include> from u_user where phone=#{phone}
+    </select>
+
+    <insert id="insertUserGetId">
+        insert into u_user(phone,login_password,add_time)
+        values(#{phone},#{loginPassword},now())
+
+        <selectKey resultType="int" keyColumn="newId" keyProperty="id" order="AFTER">
+            select LAST_INSERT_ID() as newId
+        </selectKey>
+    </insert>
+
+
+  <!--实名认证-->
+  <update id="updateRealName">
+    update u_user set id_card=#{card},`name`=#{name} where phone=#{phone}
+  </update>
+
+  <!--更新登录时间-->
+  <update id="updateLoginTime">
+    update u_user set last_login_time = #{loginDateTime} where id = #{userId}
+  </update>
+
+</mapper>

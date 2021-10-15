@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bjpowernode.mapper.IncomeRecordMapper">
+  <resultMap id="BaseResultMap" type="com.bjpowernode.model.IncomeRecord">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="uid" jdbcType="INTEGER" property="uid" />
+    <result column="loan_id" jdbcType="INTEGER" property="loanId" />
+    <result column="bid_id" jdbcType="INTEGER" property="bidId" />
+    <result column="bid_money" jdbcType="DECIMAL" property="bidMoney" />
+    <result column="income_date" jdbcType="DATE" property="incomeDate" />
+    <result column="income_money" jdbcType="DECIMAL" property="incomeMoney" />
+    <result column="income_status" jdbcType="INTEGER" property="incomeStatus" />
+  </resultMap>
+
+  <resultMap id="IncomeLoanMap" type="com.bjpowernode.pojo.IncomeLoanInfo">
+    <result column="income_date" jdbcType="DATE" property="incomeDate" />
+    <result column="income_money" jdbcType="DECIMAL" property="incomeMoney" />
+    <result column="income_status" jdbcType="INTEGER" property="incomeStatus" />
+    <result column="product_name" jdbcType="VARCHAR" property="productName" />
+    <result column="bid_money" jdbcType="DECIMAL" property="bidMoney" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, uid, loan_id, bid_id, bid_money, income_date, income_money, income_status
+  </sql>
+
+
+
+  <!--用户的收益记录-->
+  <select id="selectIncomeListByUid" resultMap="IncomeLoanMap" >
+    SELECT
+        income.income_money,
+        income.income_date,
+        income.income_status,
+        income.bid_money,
+        loan.product_name
+    FROM
+        b_income_record income
+    INNER JOIN b_loan_info loan ON income.loan_id = loan.id
+    WHERE
+        income.uid = #{uid}
+    ORDER BY
+        income_date DESC
+    LIMIT #{offSet},  #{rows}
+  </select>
+  <!--用户的总收益记录数量-->
+  <select id="selectCountRecordByUid" resultType="java.lang.Integer">
+    select count(id) as ct from b_income_record
+    where uid=#{uid}
+  </select>
+
+  <!--到期的收益记录-->
+  <select id="selectExpiredIncome" resultMap="BaseResultMap">
+    SELECT
+	   uid, sum(bid_money) as bid_money , sum(income_money) as income_money
+    FROM
+        b_income_record
+    WHERE
+        income_date = DATE_SUB(CURDATE(), INTERVAL 1 DAY)  and income_status = 0
+    GROUP BY uid
+
+  </select>
+
+  <!--添加记录-->
+  <insert id="insertIncomeRecord">
+    insert into b_income_record(uid, loan_id, bid_id, bid_money, income_date, income_money, income_status)
+    values(#{uid},#{loanId},#{bidId},#{bidMoney},#{incomeDate},#{incomeMoney},#{incomeStatus})
+  </insert>
+
+  <!--收益返还，更新状态为 1 -->
+  <update id="updateStatusBack">
+    UPDATE b_income_record
+    SET income_status = 1
+    WHERE
+        uid = #{uid}
+    AND income_status = 0
+    AND income_date = DATE_SUB(CURDATE(), INTERVAL 1 DAY)
+  </update>
+
+</mapper>

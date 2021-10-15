@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bjpowernode.mapper.LoanInfoMapper">
+  <resultMap id="BaseResultMap" type="com.bjpowernode.model.LoanInfo">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="product_name" jdbcType="VARCHAR" property="productName" />
+    <result column="rate" jdbcType="DECIMAL" property="rate" />
+    <result column="cycle" jdbcType="INTEGER" property="cycle" />
+    <result column="release_time" jdbcType="DATE" property="releaseTime" />
+    <result column="product_type" jdbcType="INTEGER" property="productType" />
+    <result column="product_no" jdbcType="VARCHAR" property="productNo" />
+    <result column="product_money" jdbcType="DECIMAL" property="productMoney" />
+    <result column="left_product_money" jdbcType="DECIMAL" property="leftProductMoney" />
+    <result column="bid_min_limit" jdbcType="DECIMAL" property="bidMinLimit" />
+    <result column="bid_max_limit" jdbcType="DECIMAL" property="bidMaxLimit" />
+    <result column="product_status" jdbcType="INTEGER" property="productStatus" />
+    <result column="product_full_time" jdbcType="TIMESTAMP" property="productFullTime" />
+    <result column="product_desc" jdbcType="VARCHAR" property="productDesc" />
+    <result column="version" jdbcType="INTEGER" property="version" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, product_name, rate, cycle, release_time, product_type, product_no, product_money, 
+    left_product_money, bid_min_limit, bid_max_limit, product_status, product_full_time, 
+    product_desc, version
+  </sql>
+
+
+    <!--查询历史年化收益率-->
+  <select id="selectHistoryAvgRate" resultType="java.math.BigDecimal">
+    SELECT
+        round(avg(rate), 2) historyAvgRate
+    FROM
+        b_loan_info
+  </select>
+
+  <!--按产品类型查询产品, 并且分页-->
+  <select id="selectLoanInfoByTypePage" resultMap="BaseResultMap">
+    SELECT
+        <include refid="Base_Column_List"></include>
+    FROM
+        b_loan_info
+    WHERE
+        product_type = #{type}
+    ORDER BY rate DESC
+    LIMIT #{offSet},#{rows}
+
+  </select>
+
+  <!--某个产品类型的总记录数量-->
+  <select id="selectRecordsByProductType" resultType="java.lang.Integer">
+     select count(id) as ct from b_loan_info where  product_type = #{type}
+  </select>
+
+  <!--按注解查询产品-->
+  <select id="selectById" resultMap="BaseResultMap">
+     select <include refid="Base_Column_List"></include>
+     from b_loan_info
+     where id=#{id}
+  </select>
+
+  <!--查询满标的没有生成收益计划的产品列表-->
+  <select id="selectManBiaoList" resultMap="BaseResultMap">
+    select <include refid="Base_Column_List"></include>
+    from b_loan_info
+    where product_status = 1 and ( product_full_time &gt;= #{beginDate} and product_full_time &lt; #{endDate} )
+  </select>
+
+
+    <!--扣除商品剩余可投资金额-->
+  <update id="updateDeductLeftMoney">
+    update b_loan_info set left_product_money = left_product_money - #{bidMoney}
+    where id = #{id} and ( left_product_money - #{bidMoney} >=0 )
+  </update>
+
+  <!--更新产品是满标状态-->
+  <update id="updateStatusAndFullTime">
+    update b_loan_info set product_status=1 , product_full_time=now()
+    where id=#{loanId}
+  </update>
+
+  <!--更新产品状态为2-->
+  <update id="updateStatusGeneratePlan">
+    update b_loan_info set product_status=2 where id=#{id}
+  </update>
+
+</mapper>

@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="kq-demo:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e1839032-99f0-42bd-86fb-3248cf9ae285" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="yml" />
+        <option value="HTML File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="D:\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1wI0TGzaddaaWbR5p0cnO07yP9W" />
+  <component name="ProjectViewState">
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="MyBatisLogPluginindexNum" value="421" />
+    <property name="MyBatisLogPluginparameters" value="Parameters:" />
+    <property name="MyBatisLogPluginpreparing" value="Preparing:" />
+    <property name="MyBatisLogPluginrunning" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/micr-common/src/main/java/com/bjpowernode/util" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="settings.editor.splitter.proportion" value="0.22623724" />
+  </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.bjpowernode.pojo" />
+      <recent name="com.bjpowernode.web.controller" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\course\23-Project\JavaProject\micr-common\src\main\java\com\bjpowernode\util" />
+      <recent name="D:\course\23-Project\JavaProject\micr-pay\src\main\java\com\bjpowernode\util\kq" />
+      <recent name="D:\course\23-Project\JavaProject\micr-pay\src\main\resources\templates" />
+      <recent name="D:\course\23-Project\JavaProject\micr-web\src\main\resources\static\images" />
+      <recent name="D:\course\23-Project\JavaProject\micr-web\src\main\resources\templates" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.MicrPayApplicationTests.test">
+    <configuration name="MicrPayApplicationTests.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="micr-pay" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bjpowernode.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.bjpowernode" />
+      <option name="MAIN_CLASS_NAME" value="com.bjpowernode.MicrPayApplicationTests" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyTEst.test02" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="micr-dataservice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bjpowernode.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.bjpowernode" />
+      <option name="MAIN_CLASS_NAME" value="com.bjpowernode.MyTEst" />
+      <option name="METHOD_NAME" value="test02" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="micr-dataservice" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true">
+      <module name="micr-dataservice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bjpowernode.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.bjpowernode.DataServiceApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="micr-pay" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="micr-pay" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.bjpowernode.MicrPayApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="UPDATE_ACTION_UPDATE_POLICY" value="UpdateResources" />
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateResources" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="micr-task" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true">
+      <module name="micr-task" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bjpowernode.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.bjpowernode.TaskApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="micr-web" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true">
+      <module name="micr-web" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bjpowernode.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.bjpowernode.MicrWebApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="UPDATE_ACTION_UPDATE_POLICY" value="UpdateResources" />
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateResources" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="mytomcat" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.43" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER" value="false" />
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8090/kq/" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="kq-demo:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/kq" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_JavaProject" />
+        <option name="HTTP_PORT" value="8090" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="54549" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="kq-demo:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.MyTEst.test02" />
+      <item itemvalue="Spring Boot.micr-pay" />
+      <item itemvalue="Spring Boot.micr-web" />
+      <item itemvalue="Spring Boot.micr-dataservice" />
+      <item itemvalue="Spring Boot.micr-task" />
+      <item itemvalue="Tomcat Server.mytomcat" />
+      <item itemvalue="JUnit.MicrPayApplicationTests.test" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.micr-web" />
+        <item itemvalue="Spring Boot.micr-dataservice" />
+        <item itemvalue="Spring Boot.micr-task" />
+        <item itemvalue="JUnit.MicrPayApplicationTests.test" />
+        <item itemvalue="JUnit.MyTEst.test02" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <option name="contentProportion" value="0.26423842" />
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Finished" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e1839032-99f0-42bd-86fb-3248cf9ae285" name="Default Changelist" comment="" />
+      <created>1628130801900</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1628130801900</updated>
+      <workItem from="1628130805919" duration="5726000" />
+      <workItem from="1628211441092" duration="6845000" />
+      <workItem from="1628298090119" duration="10852000" />
+      <workItem from="1628318145408" duration="1200000" />
+      <workItem from="1628471573844" duration="10186000" />
+      <workItem from="1628557283320" duration="9899000" />
+      <workItem from="1628730076282" duration="10980000" />
+      <workItem from="1628815978105" duration="10223000" />
+      <workItem from="1628902512377" duration="10512000" />
+      <workItem from="1629075188648" duration="10227000" />
+      <workItem from="1629159857817" duration="125000" />
+      <workItem from="1629160099621" duration="5734000" />
+      <workItem from="1629167509549" duration="5018000" />
+      <workItem from="1629334842293" duration="10677000" />
+      <workItem from="1629420782053" duration="7653000" />
+      <workItem from="1629507716439" duration="5878000" />
+      <workItem from="1629680447606" duration="3537000" />
+      <workItem from="1629764553356" duration="11443000" />
+      <workItem from="1629939091298" duration="10778000" />
+      <workItem from="1629969267800" duration="1338000" />
+      <workItem from="1630024469205" duration="29000" />
+      <workItem from="1630026091023" duration="7759000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="240" y="0" width="1137" height="860" key="#MicrPayApplication" timestamp="1629770091226">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="240" y="0" width="1137" height="860" key="#MicrPayApplication/0.0.1600.860@0.0.1600.860" timestamp="1629770091226" />
+    <state x="292" y="5" key="#Project_Structure" timestamp="1629767105878">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="292" y="5" key="#Project_Structure/0.0.1600.860@0.0.1600.860" timestamp="1629767105878" />
+    <state x="240" y="0" width="1137" height="860" key="#TaskApplication" timestamp="1629432016102">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="240" y="0" width="1137" height="860" key="#TaskApplication/0.0.1600.860@0.0.1600.860" timestamp="1629432016102" />
+    <state x="206" y="78" width="1394" height="704" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1629691948623">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="206" y="78" width="1394" height="704" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1600.860@0.0.1600.860" timestamp="1629691948623" />
+    <state x="525" y="38" key="#com.intellij.ide.util.MemberChooser" timestamp="1630032550638">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="525" y="38" key="#com.intellij.ide.util.MemberChooser/0.0.1600.860@0.0.1600.860" timestamp="1630032550638" />
+    <state x="395" y="6" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable" timestamp="1629691241532">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="395" y="6" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable/0.0.1600.860@0.0.1600.860" timestamp="1629691241532" />
+    <state x="175" y="341" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1628482891418">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="175" y="341" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1600.860@0.0.1600.860" timestamp="1628482891418" />
+    <state x="458" y="263" width="684" height="346" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1630026849983">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="458" y="263" width="684" height="346" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1600.860@0.0.1600.860" timestamp="1630026849983" />
+    <state x="467" y="118" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1628742003593">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="467" y="118" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1600.860@0.0.1600.860" timestamp="1628742003593" />
+    <state x="240" y="0" width="1137" height="860" key="#micr-web" timestamp="1628819443683">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="240" y="0" width="1137" height="860" key="#micr-web/0.0.1600.860@0.0.1600.860" timestamp="1628819443683" />
+    <state width="616" height="546" key="DebuggerActiveHint" timestamp="1630031718947">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="616" height="546" key="DebuggerActiveHint/0.0.1600.860@0.0.1600.860" timestamp="1630031718947" />
+    <state x="521" y="102" key="FileChooserDialogImpl" timestamp="1629690695341">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="521" y="102" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1629690695341" />
+    <state width="1110" height="258" key="GridCell.Tab.0.bottom" timestamp="1630034127018">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1110" height="258" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1630034127018" />
+    <state width="1110" height="258" key="GridCell.Tab.0.center" timestamp="1630034127017">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1110" height="258" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1630034127017" />
+    <state width="1110" height="258" key="GridCell.Tab.0.left" timestamp="1630034127017">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1110" height="258" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1630034127017" />
+    <state width="1110" height="258" key="GridCell.Tab.0.right" timestamp="1630034127017">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1110" height="258" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1630034127017" />
+    <state width="1110" height="258" key="GridCell.Tab.1.bottom" timestamp="1630034127018">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1110" height="258" key="GridCell.Tab.1.bottom/0.0.1600.860@0.0.1600.860" timestamp="1630034127018" />
+    <state width="1110" height="258" key="GridCell.Tab.1.center" timestamp="1630034127018">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1110" height="258" key="GridCell.Tab.1.center/0.0.1600.860@0.0.1600.860" timestamp="1630034127018" />
+    <state width="1110" height="258" key="GridCell.Tab.1.left" timestamp="1630034127018">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1110" height="258" key="GridCell.Tab.1.left/0.0.1600.860@0.0.1600.860" timestamp="1630034127018" />
+    <state width="1110" height="258" key="GridCell.Tab.1.right" timestamp="1630034127018">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1110" height="258" key="GridCell.Tab.1.right/0.0.1600.860@0.0.1600.860" timestamp="1630034127018" />
+    <state width="1110" height="376" key="GridCell.Tab.2.bottom" timestamp="1630032960101">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1110" height="376" key="GridCell.Tab.2.bottom/0.0.1600.860@0.0.1600.860" timestamp="1630032960101" />
+    <state width="1110" height="376" key="GridCell.Tab.2.center" timestamp="1630032960101">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1110" height="376" key="GridCell.Tab.2.center/0.0.1600.860@0.0.1600.860" timestamp="1630032960101" />
+    <state width="1110" height="376" key="GridCell.Tab.2.left" timestamp="1630032960101">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1110" height="376" key="GridCell.Tab.2.left/0.0.1600.860@0.0.1600.860" timestamp="1630032960101" />
+    <state width="1110" height="376" key="GridCell.Tab.2.right" timestamp="1630032960101">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1110" height="376" key="GridCell.Tab.2.right/0.0.1600.860@0.0.1600.860" timestamp="1630032960101" />
+    <state x="257" y="59" key="NewModule_or_Project.wizard" timestamp="1628214072472">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="257" y="59" key="NewModule_or_Project.wizard/0.0.1600.860@0.0.1600.860" timestamp="1628214072472" />
+    <state x="207" y="0" width="1290" height="860" key="SettingsEditor" timestamp="1629769686044">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="207" y="0" width="1290" height="860" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1629769686044" />
+    <state x="454" y="108" width="828" height="655" key="StructurePopup" timestamp="1629951845907">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="454" y="108" width="828" height="655" key="StructurePopup/0.0.1600.860@0.0.1600.860" timestamp="1629951845907" />
+    <state width="675" height="498" key="SwitcherDM" timestamp="1628741203694">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="675" height="498" key="SwitcherDM/0.0.1600.860@0.0.1600.860" timestamp="1628741203694" />
+    <state x="107" y="215" key="com.intellij.ide.util.TipDialog" timestamp="1630024487927">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="107" y="215" key="com.intellij.ide.util.TipDialog/0.0.1600.860@0.0.1600.860" timestamp="1630024487927" />
+    <state x="204" y="105" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1629951044311">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="204" y="105" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1600.860@0.0.1600.860" timestamp="1629951044311" />
+    <state x="0" y="78" width="1600" height="696" key="new project wizard" timestamp="1629769684476">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="0" y="78" width="1600" height="696" key="new project wizard/0.0.1600.860@0.0.1600.860" timestamp="1629769684476" />
+    <state x="372" y="192" key="run.anything.popup" timestamp="1628472222420">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="372" y="192" key="run.anything.popup/0.0.1600.860@0.0.1600.860" timestamp="1628472222420" />
+    <state x="362" y="0" width="874" height="858" key="search.everywhere.popup" timestamp="1629777214402">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="362" y="0" width="874" height="858" key="search.everywhere.popup/0.0.1600.860@0.0.1600.860" timestamp="1629777214402" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/micr-dataservice/src/main/java/com/bjpowernode/mapper/BidInfoMapper.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/micr-web/src/main/java/com/bjpowernode/web/service/RealNameService.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/micr-dataservice/src/main/java/com/bjpowernode/service/impl/BidInfoServiceImpl.java</url>
+          <line>148</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/micr-dataservice/src/main/java/com/bjpowernode/service/impl/IncomeServiceImpl.java</url>
+          <line>74</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/micr-dataservice/src/main/java/com/bjpowernode/service/impl/IncomeServiceImpl.java</url>
+          <line>149</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/micr-pay/src/main/java/com/bjpowernode/controller/KuaiQianController.java</url>
+          <line>67</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/micr-pay/src/main/java/com/bjpowernode/service/KuqiQianService.java</url>
+          <line>229</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

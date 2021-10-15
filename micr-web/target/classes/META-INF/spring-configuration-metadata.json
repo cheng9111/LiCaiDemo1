@@ -1,0 +1,57 @@
+{
+  "groups": [
+    {
+      "name": "jdwx.realname",
+      "type": "com.bjpowernode.config.JdwxRealNameConfig",
+      "sourceType": "com.bjpowernode.config.JdwxRealNameConfig"
+    },
+    {
+      "name": "jdwx.sms",
+      "type": "com.bjpowernode.config.JdwxSmsConfig",
+      "sourceType": "com.bjpowernode.config.JdwxSmsConfig"
+    },
+    {
+      "name": "pay",
+      "type": "com.bjpowernode.config.PayUrl",
+      "sourceType": "com.bjpowernode.config.PayUrl"
+    }
+  ],
+  "properties": [
+    {
+      "name": "jdwx.realname.appkey",
+      "type": "java.lang.String",
+      "sourceType": "com.bjpowernode.config.JdwxRealNameConfig"
+    },
+    {
+      "name": "jdwx.realname.url",
+      "type": "java.lang.String",
+      "sourceType": "com.bjpowernode.config.JdwxRealNameConfig"
+    },
+    {
+      "name": "jdwx.sms.appkey",
+      "type": "java.lang.String",
+      "sourceType": "com.bjpowernode.config.JdwxSmsConfig"
+    },
+    {
+      "name": "jdwx.sms.content",
+      "type": "java.lang.String",
+      "sourceType": "com.bjpowernode.config.JdwxSmsConfig"
+    },
+    {
+      "name": "jdwx.sms.url",
+      "type": "java.lang.String",
+      "sourceType": "com.bjpowernode.config.JdwxSmsConfig"
+    },
+    {
+      "name": "pay.baofu-url",
+      "type": "java.lang.String",
+      "sourceType": "com.bjpowernode.config.PayUrl"
+    },
+    {
+      "name": "pay.kq-url",
+      "type": "java.lang.String",
+      "sourceType": "com.bjpowernode.config.PayUrl"
+    }
+  ],
+  "hints": []
+}

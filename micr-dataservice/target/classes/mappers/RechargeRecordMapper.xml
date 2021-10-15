@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bjpowernode.mapper.RechargeRecordMapper">
+  <resultMap id="BaseResultMap" type="com.bjpowernode.model.RechargeRecord">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="uid" jdbcType="INTEGER" property="uid" />
+    <result column="recharge_no" jdbcType="VARCHAR" property="rechargeNo" />
+    <result column="recharge_status" jdbcType="INTEGER" property="rechargeStatus" />
+    <result column="recharge_money" jdbcType="DECIMAL" property="rechargeMoney" />
+    <result column="recharge_time" jdbcType="TIMESTAMP" property="rechargeTime" />
+    <result column="recharge_desc" jdbcType="VARCHAR" property="rechargeDesc" />
+    <result column="channel" jdbcType="VARCHAR" property="channel" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, uid, recharge_no, recharge_status, recharge_money, recharge_time, recharge_desc, 
+    channel
+  </sql>
+
+  <!--用户的充值记录-->
+  <select id="selectRechargeListByUid" resultMap="BaseResultMap">
+    SELECT
+    <include refid="Base_Column_List"></include>
+    FROM b_recharge_record
+    WHERE uid = #{uid}
+    ORDER BY recharge_time DESC
+    LIMIT #{offSet}, #{rows}
+  </select>
+
+  <!--用户充值记录总数-->
+  <select id="selectRecordsByUid" resultType="int">
+    select count(id) as ct from b_recharge_record
+    where uid = #{uid}
+  </select>
+  <select id="selectRechargeByRechargeNo" resultMap="BaseResultMap">
+    select <include refid="Base_Column_List"></include>
+    from b_recharge_record
+    where recharge_no = #{rechargeNo} for update
+  </select>
+
+
+  <insert id="insertRecharge">
+    insert into b_recharge_record(uid, recharge_no, recharge_status,
+            recharge_money, recharge_time, recharge_desc, channel)
+
+    values(#{uid},#{rechargeNo},#{rechargeStatus},#{rechargeMoney},
+          #{rechargeTime},#{rechargeDesc},#{channel})
+  </insert>
+
+  <update id="updateStatus">
+    update b_recharge_record set recharge_status = #{status}
+    where id = #{rechargeId}
+  </update>
+
+</mapper>
